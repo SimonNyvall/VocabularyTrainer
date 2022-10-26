@@ -1,4 +1,4 @@
-# Vocabulary Trainer
+# Vocabulary Trainer [![.NET](https://github.com/SimonNyvall/VocabularyTrainer/actions/workflows/dotnet.yml/badge.svg)](https://github.com/SimonNyvall/VocabularyTrainer/actions/workflows/dotnet.yml)
 
 This is a project we got assigned at ITHS, where the goal is to build a console and a forms app to train your vocabulary. The program should support n number of languages and use the same class across the console and form program. The Word class consists of a string array with the translations, and two indexes FromLanguage andToLanguage. FromLanguage and ToLanguage is for the user so they know what languages they should translate from and to. The WordList class contains methods to do operations on an array with type Word.
 
