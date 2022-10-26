@@ -4,9 +4,9 @@ This is a project we got assigned at ITHS, where the goal is to build a console 
 
 # Project Description
 
-<img align="left" alt="Visual Studio Code" width="31%" src="https://user-images.githubusercontent.com/50596493/198071525-ad6acd96-af76-48c7-bf72-e025bb8b57fa.PNG" />
-<img align="left" alt="Git" width="31%" src="https://user-images.githubusercontent.com/50596493/198071498-0dcef0b1-9fd7-490c-9d9b-1b396bed2d01.PNG"/>
-<img align="left" alt="GitHub" width="31%" src="https://user-images.githubusercontent.com/50596493/198071511-60c7dde6-cfdb-4197-8c03-8ee90e6e5c63.PNG"/>
+<img align="left" alt="Visual Studio Code" width="30%" src="https://user-images.githubusercontent.com/50596493/198071525-ad6acd96-af76-48c7-bf72-e025bb8b57fa.PNG" />
+<img align="left" alt="Git" width="30%" src="https://user-images.githubusercontent.com/50596493/198071498-0dcef0b1-9fd7-490c-9d9b-1b396bed2d01.PNG"/>
+<img align="left" alt="GitHub" width="30%" src="https://user-images.githubusercontent.com/50596493/198071511-60c7dde6-cfdb-4197-8c03-8ee90e6e5c63.PNG"/>
 <br/>
 <br/>
 <br/>
@@ -28,7 +28,7 @@ The list will be loaded into practice.
 # Install and Run the Project
 Step One:
 ```
-git clone ...
+git clone https://github.com/SimonNyvall/VocabularyTrainer.git
 ```
 
 Step Two
