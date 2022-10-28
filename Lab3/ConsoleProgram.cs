@@ -233,11 +233,9 @@ internal class VocabularyTrainerConsole
             {
                 Console.Write(language.ToTitel().PadRight(whiteSpaces + whiteSpaceOffset));
             }
-
             Console.WriteLine();
 
-            var languageLengthSum = loadedWordList.Languages.Sum(s => s.Length);
-            Console.Write(new string('-', languageLengthSum + whiteSpaces + whiteSpaceOffset * (loadedWordList.Languages.Length - 1) - loadedWordList.Languages[0].Length));
+            Console.Write(new string('-', (whiteSpaces + whiteSpaceOffset) * (loadedWordList.Languages.Length - 1) + loadedWordList.Languages[^1].Length));
 
             var columnIndex = 0;
             foreach (var word in input)
@@ -315,7 +313,11 @@ internal class VocabularyTrainerConsole
     {
         var wordLists = WordList.GetLists();
 
-        return wordLists.Contains(name);
+        if (wordLists.Contains(name)) return true;
+
+        Console.WriteLine($"The list name {name} does not exist!");
+
+        return false;
     }
 
     private static int PrintUsage(string usage)

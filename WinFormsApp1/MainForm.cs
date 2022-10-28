@@ -19,7 +19,17 @@ public partial class MainForm : Form
         _EditModeBtn = EditModeBtn;
         _PracticeBtn = PracticeBtn;
         _ListWordListBtn = ListWordListBtn;
-    }    
+
+        CreateSaveFileDirectory();
+    }
+
+    private static void CreateSaveFileDirectory()
+    {
+        string path = @$"C:\Users\{Environment.UserName}\AppData\Local\lab3SaveFiles";
+
+        if (!Directory.Exists(path))
+            Directory.CreateDirectory(path);
+    }
 
     private void EditModeBtn_Click(object sender, EventArgs e)
     {

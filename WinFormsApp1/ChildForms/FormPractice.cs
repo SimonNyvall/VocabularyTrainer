@@ -62,6 +62,8 @@ public partial class FormPractice : Form
 
     private void RestartBtn_Click(object sender, EventArgs e)
     {
+        if (_totalWords == 0) return;
+
         StatsLabel.Text = $"You got {_totalAwnsersRight / _totalWords * 100:0}% of the right awnsers!";
 
         _totalWords = 0;
@@ -74,6 +76,8 @@ public partial class FormPractice : Form
     {
         if (e.KeyCode != Keys.Enter) return;
 
+        e.Handled = e.SuppressKeyPress = true;
+
         _totalWords++;
 
         string rightAnswer = randomWord.Translations[randomWord.ToLanguage].ToLower();
@@ -82,9 +86,7 @@ public partial class FormPractice : Form
 
         IsAnswerCorrect(userAnswer, rightAnswer);
 
-        AwnserTextBox.Text = string.Empty;
-
-        e.Handled = true;
+        AwnserTextBox.Text = string.Empty;      
 
         StartPractice(WordListName);
     }
